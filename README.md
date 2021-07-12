@@ -1,12 +1,7 @@
 # tensorflow-drupal
 Repository for Drupal ConGov monthly meeting July 16th, 2021
 
-## Docker Container
-For dev purposes I am using a Docker container that uses tensorflow-gpu to utilize my GPU using JupyterLab
-```
-docker run --gpus all -d -it -p 8848:8888 -v $(pwd)/data:/home/jovyan/work -e GRANT_SUDO=yes -e JUPYTER_ENABLE_LAB=yes --user root cschranz/gpu-jupyter:v1.4_cuda-11.0_ubuntu-20.04_python-only
-```
-## TensorFlow.org Recommender Tutorial
-Example model to run using Jupyter Notebook and then exporting model for use with TensorFlow.js:
-(Recommending movies: retrieval)[https://www.tensorflow.org/recommenders/examples/basic_retrieval]
+# Building a Recommender System Using Drupal and TensorFlow.js
+Adapted from *Build, Train, and Deploy a Book Recommender System Using Keras, TensorFlow.js, Node.js, and Firebase (Part 1)*, https://heartbeat.fritz.ai/build-train-and-deploy-a-book-recommender-system-using-keras-tensorflow-js-b96944b936a7.  Instead of using Node.js and Firebase, I will be using Drupal 9, the Component module, and the TensorFlow.js module.
 
+The loading of the data, preprocessing the data, model building and model training will be done using Colab (or Jupyter Notebook), and the model will be exported and used by Drupal to do inference using TensorFlow.js.
