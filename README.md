@@ -9,3 +9,5 @@ The loading of the data, preprocessing the data, model building and model traini
 Read the data downloaded from [Zygmuntz's Github repository](https://github.com/zygmuntz/goodbooks-10k) After downloading these csv files, you must upload them to Colab in a directory called book-data.  They will be removed when you stop or restart the kernel.
 
 The Book Recommender can also be viewed at [Book Recommender](https://www.drupalml.com/book-recommender).
+
+Slide deck from presentation can be viewed at [Slide Deck](https://www.beautiful.ai/player/-MekNrs43B9td0rIkT8H).
